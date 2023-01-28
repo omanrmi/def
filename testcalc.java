@@ -71,8 +71,8 @@ class Main{
 
 	Integer romanToArab(String romaInput){
 		int result = 0;
-		int[] arab = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-		String[] roman = {"X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I"};
+		int[] arab = {10, 9, 5, 4, 1};
+		String[] roman = {"X", "IX", "V", "IV", "I"};
 		for (int i = 0; i < arab.length; i++ ) {
 			while (romaInput.indexOf(roman[i]) == 0) {
 				result += arab[i];
@@ -86,8 +86,8 @@ class Main{
 	String arabToRome(int araabInput){
 		String result = "";
 		int value = 0;
-		int[] arab = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-		String[] roman = {"X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I"};
+		int[] arab = {100, 90, 50, 40, 10, 9, 5, 4, 1};
+		String[] roman = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 		for (int i = 0; i < arab.length; i++){
 			value = araabInput / arab[i];
 			for (int j = 0; j < value; j++){
